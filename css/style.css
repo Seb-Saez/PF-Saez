@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Caladea&family=Roboto+Serif:opsz,wght@8..144,300&family=Source+Serif+4:opsz@8..60&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  /* Esto es obligatorio ponerlo*/
+    font-family: 'Roboto Serif', serif;
+}
+
+:root{
+    --color1: #f2cbcc; 
+    --color2: #e8a0a1;
+    --color3: #809e82;
+    --color4: #ba6664;
+    --color5: #324f4d;
+
+}
+
+
+  /* Aca vamos a volver a empezar*/
+
+
+  /* HEADER*/
+
+  header{
+    background-color: var(--color1);
+    height: 200px;
+    width: 100%;
+  }
+  
+  body header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+  
+  
+  
+  .nav-home img{
+    height: 136px;
+    width: 300px;
+  }
+  nav ul{         /*Container botones navbar*/
+    width: 60%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: end; 
+  }
+  
+  nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+  .text-nav{              /*Botones nav*/
+    height: 40px;
+    line-height: 40px;
+    width: 130px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--color2);
+    border: 2px none;
+    border-radius: 12px;
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: 40ms;
+  }
+
+
+  .text-nav:hover{                        
+    background-color: var(--color1);
+    transform: scale(1.10);
+    border: 2px ridge rgb(235, 215, 215);
+  }
+
+
+
+  nav ul li a img{
+    width: 300px;
+  }
+
+
+
+  /*FOOTER*/
+  
+  footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--color3);
+    height: 250px;
+    color: rgb(43, 43, 43);
+  }
+
+  .footer-logo{
+    height: 150px;
+  }
+
+
+  footer a img{
+    height: 50px;
+  }
+
+  .logocasamientos{
+    border-radius: 10px;
+  }
+
+
+  /*MAIN*/ 
+
+  /*Hero*/
+
+.hero{
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/hero.background.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  }
+
+.hero h2{
+  text-align: center;
+  padding: 50px;
+  font-size: 30px;
+}
+
+.hero a{
+  margin-top: 70px;       
+
+}
+
+
+/*Sobre mi*/
+
+.sobre-mi-container{
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.sobre-mi-container img{
+  max-width: 900px;
+  border: 10px none;
+  border-radius: 30px;
+} 
+
+
+
+
+.description h2{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.description p{
+  padding: 30px;
+  font-size: 20px;
+}
+
+
+/*MAIN CARDS*/
+
+.main-cards{
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.main-cards div {
+  width: 500px; 
+  height: 650px;
+  padding: 20px;
+  border: 10px none;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: end; 
+  align-items: center;
+  margin: 20px;
+}
+
+.main-cards div:nth-child(1){
+  background-image: url(../img/novia-main.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.main-cards div:nth-child(2){
+  background-image: url(../img/portf-main.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+
+/*Botones*/
+
+.button {            /* Afectar a todos los botones*/
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: large;
+  background-color: var(--color2);
+  border: 2px none;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  padding-top: 4px;
+  transition: 40ms;
+  
+}
+
+.button:hover{
+  background-color: var(--color1);
+  transform: scale(1.15);
+}
+
+
+
+/* Formulario*/       
+
+form {
+  /* Centrar el formulario en la página */
+  padding-top: 40px;
+  width: 100%;
+  height: 800px;
+  /* Esquema del formulario */
+  padding: 30px;
+}
+
+form ul{
+  list-style: none;
+  margin: 0PX auto;
+  height: 700px;
+  width: 900px;
+  padding: 50px;
+  border: 3px solid var(--color1);
+  border-radius: 20px;
+  padding: 30px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+form ul li {
+  display: flex;
+  width: 100%;
+  height: 40px;
+  margin: 10px;
+}
+
+form ul li button{
+  margin-top: 60px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: left;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  justify-content: end;
+  width: 700px;
+  box-sizing: border-box;
+  border: 3px solid var(--color2);
+  border-radius: 5px;
+}
+
+
+textarea {
+  vertical-align: top;
+
+  height: 5em;
+}
+
+.button li{
+  margin-bottom: 50px;
+}
+
+.button button {
+  background-color: var(--color2);
+  border: 3px inset var(--color4);
+  border-radius: 5px;
+  color: #000;
+  height: 30px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.main-form h2{
+  text-align: center;
+  padding: 40px;
+}
+
+.main-form p{
+  padding: 50px 10px 50px 100px;
+  text-align: justify;
+}
+
+/*Galerias Novias y Portfolio*/   /*GRID*/
+
+.img-container{
+  display: grid;
+  grid-template-rows: repeat(3, 800px);
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin: 30px;
+}
+
+/*.img-container div{
+  width: 100%;
+  height: 100%;
+  
+}*/
+
+.img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 30px none;
+  border-radius: 20px;
+  
+}
+
+.move-left{
+  object-position: right;
+}
+
+.move-right{
+  object-position: left;
+}
+
+
+.button-container{          /*Contenedor botones de galerias*/
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+
+
+ /*RESPONSIVE DESIGN*/
+
+ @media screen and (max-width: 768px){
+  body header nav{         /*NAV Header*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+  }
+  .nav-home img{
+    width: 300px;
+    height: auto;
+    padding: 20px;
+  }
+  nav ul{         /*Container botones navbar*/
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  
+  .text-nav{              /*Botones nav*/
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    background-color: var(--color2);
+    border: 1px none;
+    border-radius: 0%;
+    color: rgb(43, 43, 43);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    transition: 40ms;
+    margin: 0px;
+  }
+
+    /*Hero*/
+
+.hero{
+  height: 200px;
+  width: 100%;
+  background-image: url(../img/hero.background.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  }
+
+.hero h2{
+  text-align: center;
+  padding: 30px;
+  font-size: 20px;
+}
+
+.hero a{
+  margin-top: 30px;       
+
+}
+
+  
+}
+
