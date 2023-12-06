@@ -94,17 +94,25 @@
     justify-content: space-evenly;
     align-items: center;
     background-color: var(--color3);
-    height: 250px;
+    height: max-content;
     color: rgb(43, 43, 43);
   }
 
   .footer-logo{
     height: 150px;
+    margin: 20px;
   }
 
 
   footer a img{
     height: 50px;
+  }
+  footer a{
+    margin: 20px;
+  }
+
+  footer h2{
+    margin: 20px;
   }
 
   .logocasamientos{
@@ -361,11 +369,81 @@ textarea {
 }
 
 
+/*CURSOS*/
 
- /*RESPONSIVE DESIGN*/
+.cursos-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30px;
+  height: max-content;
+}
+
+.div-cursos{
+  width: 400px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  padding: 20px;
+  margin: 15px 0px;
+  border: 6px none;
+  border-radius: 15px;
+}
+
+.div-cursos:nth-child(1){
+  background-image: url(../img/portf5.png);
+  background-size: cover;
+  background-position: top;
+}
+
+.div-cursos:nth-child(2){
+  background-image: url(../img/delineado.png);
+  background-size: cover;
+  background-position: right;
+}
+
+.div-cursos:nth-child(3){
+  background-image: url(../img/portf4.png);
+  background-size: cover;
+  background-position: right;
+}
+
+ /*RESPONSIVE DESIGN*/     /*A 980 para que no se rompa*/
+
+ @media screen and (max-width: 980px){
+
+  body header nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  header{
+    height: max-content;
+  }
+  nav ul{         /*Container botones navbar*/      /*Responsive*/
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+  }
+
+  footer{
+    flex-wrap: wrap;
+  }
+
+ }
+
+ /*RESPONSIVE DESIGN*/     /*A 768 para mobile*/
 
  @media screen and (max-width: 768px){
-  body header nav{         /*NAV Header*/
+  
+  header{
+    height: max-content;     /*ACA solucione el problema del solapamiento*/
+  }
+  
+  body header nav{         /*NAV Header*/      /*Responsive*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -379,7 +457,7 @@ textarea {
     height: auto;
     padding: 20px;
   }
-  nav ul{         /*Container botones navbar*/
+  nav ul{         /*Container botones navbar*/      /*Responsive*/
     width: 100%;
     list-style: none;
     display: flex;
@@ -396,7 +474,7 @@ textarea {
   }
 
   
-  .text-nav{              /*Botones nav*/
+  .text-nav{              /*Botones nav*/     /*Responsive*/
     height: 40px;
     line-height: 40px;
     width: 100%;
@@ -411,18 +489,17 @@ textarea {
     margin: 0px;
   }
 
-    /*Hero*/
+    /*Hero*/    /*Responsive*/
 
 .hero{
   height: 200px;
   width: 100%;
   background-image: url(../img/hero.background.jpg);
-  background-attachment: fixed;
-  background-position: bottom;
+  background-position: bottom left;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  margin-top: auto;
 
   }
 
@@ -436,6 +513,86 @@ textarea {
   margin-top: 30px;       
 
 }
+
+/*Sobre mi*/  /*Responsive*/
+
+.sobre-mi-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+
+.sobre-mi-container img{
+  width: 100%;                /*DUDA: esta bien lo que hice aca? poner width de 100% para que la imagen se me adapte al ancho de la pantalla*/
+  border: 0px none;
+  border-radius: 0px;
+  overflow: hidden;     
+} 
+
+
+
+
+.description h2{
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.description p{
+  padding: 7px;
+  font-size: 20px;
+}
+
+
+/*MAIN CARDS*/     /*Responsive main cards*/
+
+.main-cards{
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0px;
+}
+
+.main-cards div {
+  width: 100%; 
+  height: 400px;
+  padding: 0px;
+  border-radius: 0px;
+  margin: 15px 0px;
+}
+
+
+/*FOOTER*/        /*Responsive*/
+  
+footer{
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  /*padding: 10px;*/
+  color: rgb(43, 43, 43);
+  width: 100%;
+}
+
+.footer-logo{
+  height: 100px;
+}
+
+
+footer a img{
+  height: 50px;
+
+}
+
+/*.logocasamientos{
+  /border-radius: 10px;
+} */
+
+
 
   
 }
