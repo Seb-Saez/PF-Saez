@@ -22,68 +22,50 @@
 
   /* HEADER*/
 
-  header{
+
+  .header{
     background-color: var(--color1);
     height: 200px;
-    width: 100%;
-  }
-  
-  body header nav{
     display: flex;
     justify-content: space-between;
-    padding: 30px;
-    flex-wrap: wrap;
-  }
-  
-  
-  
-  .nav-home img{
-    height: 136px;
-    width: 300px;
-  }
-  nav ul{         /*Container botones navbar*/
-    width: 60%;
-    list-style: none;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: end; 
-  }
-  
-  nav ul li{
-    display: flex;
-    justify-content: center;
     align-items: center;
-  }
 
+
+  }
   
-  .text-nav{              /*Botones nav*/
-    height: 40px;
-    line-height: 40px;
-    width: 130px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: var(--color2);
-    border: 2px none;
-    border-radius: 12px;
-    color: rgb(43, 43, 43);
-    text-decoration: none;
-    text-align: center;
+  .header-logo{
+
+    padding-left: 16px;
+
+  }
+
+
+  .header-logo img{
+    block-size: auto;
+    inline-size: 200px;
+
+  }
+
+  .header .navbar{
+    text-align: end;
+  }
+
+  .header .navbar .nav-link{
+    font-family: 'Roboto Serif', serif;
     font-weight: bold;
-    transition: 40ms;
+    margin: 8px;
+  }
+  .header .navbar .nav-link.active{
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    
   }
 
-
-  .text-nav:hover{                        
+  .header .navbar .container-fluid .offcanvas{
     background-color: var(--color1);
-    transform: scale(1.10);
-    border: 2px ridge rgb(235, 215, 215);
   }
 
 
-
-  nav ul li a img{
-    width: 300px;
-  }
 
 
 
@@ -130,6 +112,7 @@
   background-image: url(../img/hero.background.jpg);
   background-attachment: fixed;
   background-position: bottom;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,16 +120,30 @@
 
   }
 
-.hero h2{
-  text-align: center;
-  padding: 50px;
-  font-size: 30px;
-}
-
-.hero a{
-  margin-top: 70px;       
-
-}
+  
+  .hero h2{
+    text-align: center;
+    padding: 50px;
+    font-size: 30px;
+  }
+  
+  .hero a{
+    margin-top: 70px;       
+    
+  }
+  
+  .hero.hero-cursos{
+    height: 500px;
+    background-image: url(../img/hero-cursos.jpg);
+    background-size: cover;
+    background-attachment: initial;
+    background-position-y: 26%;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: large;
+    text-align: center;
+  }
 
 
 /*Sobre mi*/
@@ -240,6 +237,25 @@
   transform: scale(1.15);
 }
 
+.button-cursos {            /* Afectar a todos los botones*/
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: large;
+  background-color: var(--color2);
+  border: 2px none;
+  border-radius: 5px;
+  height: 35px;
+  width: 300px;
+  padding-top: 4px;
+  transition: 40ms;
+  
+}
+
+.button-cursos:hover{
+  background-color: var(--color1);
+  transform: scale(1.15);
+}
 
 
 /* Formulario*/       
@@ -400,7 +416,7 @@ textarea {
 }
 
 .div-cursos:nth-child(2){
-  background-image: url(../img/delineado.png);
+  background-image: url(../img/delineado.jpg);
   background-size: cover;
   background-position: right;
 }
@@ -411,23 +427,22 @@ textarea {
   background-position: right;
 }
 
+
+/*RESPONSIVE DESIGN*/     /*A 1330 para que no se rompa*/
+
+@media screen and (max-width: 1330px){
+
+  .sobre-mi-container img{
+    max-width: 600px;
+  } 
+
+}
+
  /*RESPONSIVE DESIGN*/     /*A 980 para que no se rompa*/
 
- @media screen and (max-width: 980px){
+ @media screen and (max-width: 1120px){
 
-  body header nav{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  header{
-    height: max-content;
-  }
-  nav ul{         /*Container botones navbar*/      /*Responsive*/
-    width: 100%;
-    display: flex;
-    margin-top: 30px;
-  }
+
 
   footer{
     flex-wrap: wrap;
@@ -439,55 +454,6 @@ textarea {
 
  @media screen and (max-width: 768px){
   
-  header{
-    height: max-content;     /*ACA solucione el problema del solapamiento*/
-  }
-  
-  body header nav{         /*NAV Header*/      /*Responsive*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    width: 100%;
-    height: fit-content;
-  }
-  .nav-home img{
-    width: 300px;
-    height: auto;
-    padding: 20px;
-  }
-  nav ul{         /*Container botones navbar*/      /*Responsive*/
-    width: 100%;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  nav ul li{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-  }
-
-  
-  .text-nav{              /*Botones nav*/     /*Responsive*/
-    height: 40px;
-    line-height: 40px;
-    width: 100%;
-    background-color: var(--color2);
-    border: 1px none;
-    border-radius: 0%;
-    color: rgb(43, 43, 43);
-    text-decoration: none;
-    text-align: center;
-    font-weight: bold;
-    transition: 40ms;
-    margin: 0px;
-  }
 
     /*Hero*/    /*Responsive*/
 
@@ -587,10 +553,11 @@ footer a img{
   height: 50px;
 
 }
+footer h2{
+  font-size: medium;
+}
 
-/*.logocasamientos{
-  /border-radius: 10px;
-} */
+
 
 
 
