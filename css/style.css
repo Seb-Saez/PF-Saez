@@ -208,7 +208,7 @@
   background-position: left;
 }
 .main-cards div:nth-child(2){
-  background-image: url(../img/portf-main.png);
+  background-image: url(../img/portf-main.PNG);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
