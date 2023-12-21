@@ -118,3 +118,22 @@ section.sobre-mi-container{
 
 
 }
+
+@media screen and (min-width: 1000px){
+    form.form-container{
+        grid-template-columns: 1fr;
+        p{
+            display: grid;
+            grid-template-columns: 20% 80%;
+            label{
+                grid-column: 1;
+                justify-self: start;
+            }
+            input,
+            textarea{
+                grid-column: 2;
+                width: 100%;
+            }
+        }
+    }
+}

@@ -211,6 +211,53 @@ section.button-container {
   align-items: center;
   margin: 30px; }
 
+/*Main contacto*/
+section.main-form {
+  padding: 20px;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  section.main-form h2 {
+    text-align: center; }
+  section.main-form p {
+    text-align: center; }
+
+/*Formulario de contacto con grid*/
+form.form-container {
+  background-color: rgba(238, 238, 238, 0.849);
+  box-sizing: border-box;
+  border: 3px none;
+  border-radius: 5px;
+  width: 90%;
+  margin: auto;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  justify-content: center; }
+  form.form-container p {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    align-items: center; }
+    form.form-container p input,
+    form.form-container p textarea {
+      width: 100%;
+      box-sizing: border-box;
+      background: none;
+      border: none;
+      border-bottom: 2px solid var(--color1); }
+      form.form-container p input:focus,
+      form.form-container p textarea:focus {
+        outline: none;
+        border-bottom: 2px solid var(--color3); }
+    form.form-container p textarea {
+      resize: vertical; }
+  form.form-container button {
+    place-self: center; }
+
 @media screen and (max-width: 1330px) {
   section.sobre-mi-container img {
     max-width: 600px; } }
@@ -285,3 +332,17 @@ section.button-container {
       font-size: medium; }
     footer a img {
       height: 50px; } }
+
+@media screen and (min-width: 1000px) {
+  form.form-container {
+    grid-template-columns: 1fr; }
+    form.form-container p {
+      display: grid;
+      grid-template-columns: 20% 80%; }
+      form.form-container p label {
+        grid-column: 1;
+        justify-self: start; }
+      form.form-container p input,
+      form.form-container p textarea {
+        grid-column: 2;
+        width: 100%; } }

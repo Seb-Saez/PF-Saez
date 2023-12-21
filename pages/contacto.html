@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paula Saez MakeUp</title>
+    <title>Paula Saez MakeUp | Maquilladora profesional</title>
+    <meta name="keyword" content="Maquillaje, Maquilladora, maquilladora profesional, en, mendoza, moda, makeup, mendoza wedding, boda, casamiento, wedding in mendoza">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="../css/style.css" -->
     <link rel="stylesheet" href="../css/estilos.css"
@@ -48,9 +49,57 @@
     <main>
         <section class="main-form">
             <h2>Completa el siguiente formulario para recibir la mejor atención.</h2>
-            <p>Contanos con mas detalle como va a ser tu evento asi podemos brindarte el mejor asesoramiento. Sentite libre de incluir todas las dudas que tengas con respecto a los detalles de los servicios que deseas, cualquier pregunta que puedas tener o cualquier otra cosa que desees informarnos.</p>
+            <p>Contanos con mas detalle como va a ser tu evento asi podemos brindarte el mejor asesoramiento. <br>Sentite libre de incluir todas las dudas que tengas con respecto a los detalles de los servicios que deseas, cualquier pregunta que puedas tener o cualquier otra cosa que desees informarnos.</p>
         </section>
-        <form action="form-container" method="post">
+
+        <section>
+          <form action="" class="form-container">
+            <p>
+              <label for="Nombre y apellido">Nombre y apellido</label>
+              <input type="text" name="Nombre y apellido" id="Nombre y apellido" required>
+            </p>
+            <p>
+              <label for="eMail">eMail</label>
+              <input type="email" name="eMail" id="eMail" required>
+            </p>
+            <p>
+              <label for="Telefono">Telefono</label>
+              <input type="tel" name="Telefono" id="Telefono" required>
+            </p>
+            <p>
+              <label for="Fecha del evento">Fecha del evento</label>
+              <input type="date" name="Fecha del evento" id="Fecha del evento" required>
+            </p>
+            <p>
+              <label for="Horario">Horario</label>
+              <input type="time" name="Horario" id="Horario">
+            </p>
+            <p>
+              <label for="Lugar">Lugar</label>
+              <input type="text" name="Lugar" id="Lugar">
+            </p>
+            <p>
+              <label for="Tipo">Tipo de evento</label>
+              <input type="text" name="Tipo" id="Tipo" required>
+            </p>
+            <p>
+              <label for="personas">Personas que requieren del servicio</label>
+              <input type="text" name="personas" id="personas">
+            </p>
+            <p>
+              <label for="Mensaje">Mensaje</label>
+              <textarea type="text" name="Mensaje" id="Mensaje" rows="4"></textarea>
+            </p>
+            <button type="submit" class="button">Enviar</button>
+          </form>
+        </section>
+
+
+
+
+
+
+        <!-- <form action="form-container" method="post">
             <ul class="form-flex-container">
                 <li>
                     <label for="name">Nombre:</label>
@@ -93,7 +142,7 @@
                 </li>
 
             </ul>
-        </form>
+        </form> -->
 
 
     </main>
