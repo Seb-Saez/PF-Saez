@@ -1,0 +1,287 @@
+/*ROOT*/
+@import url("https://fonts.googleapis.com/css2?family=Caladea&family=Roboto+Serif:opsz,wght@8..144,300&family=Source+Serif+4:opsz@8..60&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Esto es obligatorio ponerlo*/
+  font-family: 'Roboto Serif', serif; }
+
+:root {
+  --color1: #f2cbcc;
+  --color2: #e8a0a1;
+  --color3: #809e82;
+  --color4: #ba6664;
+  --color5: #324f4d; }
+
+.button {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: large;
+  background-color: var(--color2);
+  border: 2px none;
+  border-radius: 5px;
+  height: 30px;
+  width: 200px;
+  padding-top: 4px;
+  transition: 40ms; }
+  .button:hover {
+    background-color: var(--color1);
+    transform: scale(1.15); }
+
+.button-cursos {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: large;
+  background-color: var(--color2);
+  border: 2px none;
+  border-radius: 5px;
+  height: 35px;
+  width: 300px;
+  padding-top: 4px;
+  transition: 40ms; }
+  .button-cursos:hover {
+    background-color: var(--color1);
+    transform: scale(1.15); }
+
+/*Bootstrap header*/
+header {
+  background-color: var(--color1);
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  header a.header-logo {
+    padding-left: 16px; }
+    header a.header-logo img {
+      block-size: auto;
+      inline-size: 200px; }
+  header nav div.container-fluid div.offcanvas.offcanvas-end {
+    background-color: var(--color1); }
+    header nav div.container-fluid div.offcanvas.offcanvas-end div.offcanvas-body ul.navbar-nav {
+      text-align: end; }
+      header nav div.container-fluid div.offcanvas.offcanvas-end div.offcanvas-body ul.navbar-nav li.nav-item a.nav-link {
+        font-family: 'Roboto Serif', serif;
+        font-weight: bold;
+        margin: 8px; }
+      header nav div.container-fluid div.offcanvas.offcanvas-end div.offcanvas-body ul.navbar-nav li.nav-item a.nav-link.active {
+        text-decoration: underline;
+        text-underline-offset: 4px; }
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--color3);
+  height: max-content;
+  color: #2b2b2b; }
+  footer img.footer-logo {
+    height: 150px;
+    margin: 20px; }
+  footer h2 {
+    margin: 20px; }
+  footer a {
+    margin: 20px; }
+    footer a img {
+      height: 50px; }
+  footer a img.logocasamientos {
+    border-radius: 10px; }
+
+/*Main index*/
+/*Hero index*/
+.hero {
+  height: 400px;
+  width: 100%;
+  background-image: url(../img/hero.background.jpg);
+  background-attachment: fixed;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .hero h2 {
+    text-align: center;
+    padding: 50px;
+    font-size: 30px; }
+  .hero a.button {
+    margin-top: 70px; }
+
+/*Sobre mi*/
+section.sobre-mi-container {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px; }
+  section.sobre-mi-container img {
+    max-width: 900px;
+    border: 10px none;
+    border-radius: 30px; }
+  section.sobre-mi-container div.description h2 {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center; }
+  section.sobre-mi-container div.description p {
+    padding: 30px;
+    font-size: 20px; }
+
+/*Cards main index*/
+section.main-cards {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 30px; }
+  section.main-cards div {
+    width: 500px;
+    height: 650px;
+    padding: 20px;
+    border: 10px none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    margin: 20px; }
+  section.main-cards div.novias-card {
+    background-image: url(../img/novia-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left; }
+  section.main-cards div.portfolio-card {
+    background-image: url(../img/portf-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top; }
+
+/*MAIN PAGE CURSOS*/
+section div.hero.hero-cursos {
+  height: 500px;
+  background-image: linear-gradient(rgba(5, 7, 12, 0.3), rgba(5, 7, 12, 0.3)), url(../img/hero-cursos.jpg);
+  background-size: cover;
+  background-attachment: initial;
+  background-position-y: 26%;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  color: white;
+  font-size: large;
+  text-align: center; }
+
+section.cursos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  padding: 30px;
+  height: max-content; }
+  section.cursos-container div.div-cursos {
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+    margin: 15px 0px;
+    border: 6px none;
+    border-radius: 15px; }
+  section.cursos-container .div-cursos:nth-child(1) {
+    background-image: url(../img/portf5.jpg);
+    background-size: cover;
+    background-position: top; }
+  section.cursos-container .div-cursos:nth-child(2) {
+    background-image: url(../img/delineado.jpg);
+    background-size: cover;
+    background-position: right; }
+  section.cursos-container .div-cursos:nth-child(3) {
+    background-image: url(../img/portf4.jpg);
+    background-size: cover;
+    background-position: right; }
+
+/*Galerias de imagenes*/
+section.button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px; }
+
+@media screen and (max-width: 1330px) {
+  section.sobre-mi-container img {
+    max-width: 600px; } }
+
+@media screen and (max-width: 1120px) {
+  footer {
+    flex-wrap: wrap; } }
+
+/*MEdia mobile a 768px*/
+@media screen and (max-width: 768px) {
+  /*Hero*/
+  .hero {
+    height: 200px;
+    width: 100%;
+    background-image: url(../img/hero.background.jpg);
+    background-position: bottom left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto; }
+  .hero h2 {
+    text-align: center;
+    padding: 30px;
+    font-size: 20px; }
+  .hero a {
+    margin-top: 30px; }
+  /*Sobre mi section*/
+  section.sobre-mi-container {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    padding: 0px; }
+    section.sobre-mi-container img {
+      width: 100%;
+      /*DUDA: esta bien lo que hice aca? poner width de 100% para que la imagen se me adapte al ancho de la pantalla*/
+      border: 0px none;
+      border-radius: 0px;
+      overflow: hidden; }
+    section.sobre-mi-container div.description h2 {
+      padding: 20px;
+      font-size: 30px;
+      text-align: center; }
+    section.sobre-mi-container div.description p {
+      padding: 7px;
+      font-size: 20px; }
+  /*Section cards*/
+  section.main-cards {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0px; }
+    section.main-cards div {
+      width: 100%;
+      height: 400px;
+      padding: 0px;
+      border-radius: 0px;
+      margin: 15px 0px; }
+  /*Footer responsive*/
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    color: #2b2b2b;
+    width: 100%; }
+    footer img.footer-logo {
+      height: 100px; }
+    footer h2 {
+      font-size: medium; }
+    footer a img {
+      height: 50px; } }

@@ -1,0 +1,120 @@
+
+@media screen and (max-width: 1330px){
+
+
+section.sobre-mi-container{
+    img{
+        max-width: 600px;
+    }
+}
+}
+
+
+
+@media screen and (max-width: 1120px){
+
+
+
+    footer{
+      flex-wrap: wrap;
+    }
+}
+
+/*MEdia mobile a 768px*/
+
+@media screen and (max-width: 768px){
+    /*Hero*/
+    .hero{
+        height: 200px;
+        width: 100%;
+        background-image: url(../img/hero.background.jpg);
+        background-position: bottom left;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: auto;
+    }
+    .hero h2{
+        text-align: center;
+        padding: 30px;
+        font-size: 20px;
+    }
+    .hero a{
+        margin-top: 30px;
+    }
+
+    /*Sobre mi section*/
+
+    section.sobre-mi-container{
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+        img{
+            width: 100%;;                /*DUDA: esta bien lo que hice aca? poner width de 100% para que la imagen se me adapte al ancho de la pantalla*/
+            border: 0px none;
+            border-radius: 0px;
+            overflow: hidden;
+
+        }
+        div.description{
+            h2{
+                padding: 20px;
+                font-size: 30px;
+                text-align: center;
+
+            }
+            p{
+                padding: 7px;
+                font-size: 20px;
+
+            }
+
+        }
+    }
+
+    /*Section cards*/
+    section.main-cards{
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        padding: 0px;
+        div{
+            width: 100%; 
+            height: 400px;
+            padding: 0px;
+            border-radius: 0px;
+            margin: 15px 0px;
+
+        }
+    }
+
+    /*Footer responsive*/
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        color: rgb(43, 43, 43);
+        width: 100%;
+        img.footer-logo{
+            height: 100px;
+
+        }
+        h2{
+            font-size: medium;
+
+        }
+        a{
+            img{
+                height: 50px;
+
+            }
+        }
+    }
+
+
+}

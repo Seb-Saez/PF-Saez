@@ -1,0 +1,158 @@
+/*Main index*/
+
+/*Hero index*/
+
+.hero{
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/hero.background.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h2{
+        text-align: center;
+        padding: 50px;
+        font-size: 30px;
+
+    }
+    a.button{
+        margin-top: 70px; 
+
+    }
+}
+
+/*Sobre mi*/
+
+section.sobre-mi-container{
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    img{
+        max-width: 900px;
+        border: 10px none;
+        border-radius: 30px;
+
+    }
+    div.description{
+        h2{
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+
+        }
+        p{
+            padding: 30px;
+            font-size: 20px;
+
+        }
+    }
+}
+
+/*Cards main index*/
+
+section.main-cards{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    padding: 30px;
+    div{
+        width: 500px; 
+        height: 650px;
+        padding: 20px;
+        border: 10px none;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: end; 
+        align-items: center;
+        margin: 20px;
+    }
+    div.novias-card{
+        background-image: url(../img/novia-main.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    div.portfolio-card{
+        background-image: url(../img/portf-main.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+}
+
+
+/*MAIN PAGE CURSOS*/
+
+section{
+    div.hero.hero-cursos{
+        height: 500px;
+        background-image: linear-gradient(rgba(5,7,12,0.3),rgba(5,7,12,0.3)), url(../img/hero-cursos.jpg);
+        background-size: cover;
+        background-attachment: initial;
+        background-position-y: 26%;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        color: white;
+        font-size: large;
+        text-align: center;
+        
+    }
+}
+
+section.cursos-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 30px;
+    height: max-content;
+    div.div-cursos{
+        width: 400px;
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: end;
+        padding: 20px;
+        margin: 15px 0px;
+        border: 6px none;
+        border-radius: 15px;
+
+    }
+    .div-cursos:nth-child(1){
+        background-image: url(../img/portf5.jpg);
+        background-size: cover;
+        background-position: top;
+      }
+      
+      .div-cursos:nth-child(2){
+        background-image: url(../img/delineado.jpg);
+        background-size: cover;
+        background-position: right;
+      }
+      
+      .div-cursos:nth-child(3){
+        background-image: url(../img/portf4.jpg);
+        background-size: cover;
+        background-position: right;
+      }
+}
+
+/*Galerias de imagenes*/
+
+section.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}

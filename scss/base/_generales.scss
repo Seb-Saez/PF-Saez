@@ -1,0 +1,37 @@
+.button{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    background-color: var(--color2);
+    border: 2px none;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+    padding-top: 4px;
+    transition: 40ms;
+    &:hover{
+        background-color: var(--color1);
+        transform: scale(1.15);
+    }
+    
+}
+
+.button-cursos{
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    background-color: var(--color2);
+    border: 2px none;
+    border-radius: 5px;
+    height: 35px;
+    width: 300px;
+    padding-top: 4px;
+    transition: 40ms;
+    &:hover{
+        background-color: var(--color1);
+        transform: scale(1.15);
+    }
+
+}
