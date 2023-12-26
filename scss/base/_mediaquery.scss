@@ -119,8 +119,40 @@ section.sobre-mi-container{
 
 }
 
+
+
+@media screen and (min-width: 768px){
+
+
+
+    /*Galerias responsive, que no se hagan mas grandes*/
+
+
+
+    div.carousel-inner{
+        background-color: var(--color6);
+        height: 600px;
+        width: 100%;
+        div.carousel-item {
+            height: 600px;
+            width: 100%;
+
+        
+            img{
+                width: auto;
+                height: 600px;
+                object-fit: contain;
+
+            }
+          }
+        }
+}
+
 @media screen and (min-width: 1000px){
-    form.form-container{
+
+    /*formulario de contacto*/
+
+    form.form-container{     
         grid-template-columns: 1fr;
         p{
             display: grid;
@@ -136,4 +168,24 @@ section.sobre-mi-container{
             }
         }
     }
+
+
+    /*Galerias responsive, que no se hagan mas grandes*/
+
+    div.carousel-inner{
+        height: 800px;
+        width: 100%;
+        div.carousel-item {
+            height: 800px;
+            width: 100%;
+
+        
+            img{
+                width: auto;
+                height: 800px;
+                object-fit: contain;
+
+            }
+          }
+        }
 }

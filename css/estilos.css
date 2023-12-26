@@ -12,7 +12,8 @@
   --color2: #e8a0a1;
   --color3: #809e82;
   --color4: #ba6664;
-  --color5: #324f4d; }
+  --color5: #324f4d;
+  --color6: #eeeeeed8; }
 
 .button {
   color: black;
@@ -226,7 +227,7 @@ section.main-form {
 
 /*Formulario de contacto con grid*/
 form.form-container {
-  background-color: rgba(238, 238, 238, 0.849);
+  background-color: var(--color6);
   box-sizing: border-box;
   border: 3px none;
   border-radius: 5px;
@@ -333,7 +334,22 @@ form.form-container {
     footer a img {
       height: 50px; } }
 
+@media screen and (min-width: 768px) {
+  /*Galerias responsive, que no se hagan mas grandes*/
+  div.carousel-inner {
+    background-color: var(--color6);
+    height: 600px;
+    width: 100%; }
+    div.carousel-inner div.carousel-item {
+      height: 600px;
+      width: 100%; }
+      div.carousel-inner div.carousel-item img {
+        width: auto;
+        height: 600px;
+        object-fit: contain; } }
+
 @media screen and (min-width: 1000px) {
+  /*formulario de contacto*/
   form.form-container {
     grid-template-columns: 1fr; }
     form.form-container p {
@@ -345,4 +361,15 @@ form.form-container {
       form.form-container p input,
       form.form-container p textarea {
         grid-column: 2;
-        width: 100%; } }
+        width: 100%; }
+  /*Galerias responsive, que no se hagan mas grandes*/
+  div.carousel-inner {
+    height: 800px;
+    width: 100%; }
+    div.carousel-inner div.carousel-item {
+      height: 800px;
+      width: 100%; }
+      div.carousel-inner div.carousel-item img {
+        width: auto;
+        height: 800px;
+        object-fit: contain; } }
