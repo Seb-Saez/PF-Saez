@@ -297,7 +297,6 @@ form.form-container {
     padding: 0px; }
     section.sobre-mi-container img {
       width: 100%;
-      /*DUDA: esta bien lo que hice aca? poner width de 100% para que la imagen se me adapte al ancho de la pantalla*/
       border: 0px none;
       border-radius: 0px;
       overflow: hidden; }
