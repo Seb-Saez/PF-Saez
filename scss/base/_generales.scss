@@ -1,4 +1,6 @@
-.button{
+/*Aca vamos a aplicar un mixin a los botones*/
+
+@mixin estilo-boton{   /*Definir el mixin*/
     color: black;
     text-decoration: none;
     text-align: center;
@@ -6,10 +8,15 @@
     background-color: var(--color2);
     border: 2px none;
     border-radius: 5px;
+    transition: 40ms;
+   }
+
+
+.button{ 
+    @include estilo-boton();  /*Inlcuir el mixin, igual abajo*/
     height: 30px;
     width: 200px;
     padding-top: 4px;
-    transition: 40ms;
     &:hover{
         background-color: var(--color1);
         transform: scale(1.15);
@@ -18,17 +25,10 @@
 }
 
 .button-cursos{
-    color: black;
-    text-decoration: none;
-    text-align: center;
-    font-size: large;
-    background-color: var(--color2);
-    border: 2px none;
-    border-radius: 5px;
+    @include estilo-boton();
     height: 35px;
     width: 300px;
     padding-top: 4px;
-    transition: 40ms;
     &:hover{
         background-color: var(--color1);
         transform: scale(1.15);
